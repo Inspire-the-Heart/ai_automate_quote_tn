@@ -141,7 +141,7 @@ def pin_upload(quote_data,link):
             raise Exception("❌ No board selected. Aborting.")
 
     # Prepare uploader
-    uploader = PinterestUploader(os.getenv("PINTEREST_ACCESS_TOKEN"), board_id,upload_url)
+    # uploader = PinterestUploader(os.getenv("PINTEREST_ACCESS_TOKEN"), board_id,upload_url)
 
     # Find images
     image_paths = glob.glob("./output_image.png")
