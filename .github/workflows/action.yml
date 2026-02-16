@@ -3,10 +3,10 @@ name: Vionix Pipeline
 on:
   push:
   schedule:
-    - cron: "0 3,8,14,17 * * *"
+    - cron: "0 13 * * *"   # Tamil
 
 concurrency:
-  group: vionix-pipeline
+  group: vionix-pipeline-tamil
   cancel-in-progress: true
 
 env:
